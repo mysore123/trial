@@ -1,11 +1,11 @@
 <div class="container">
-    <h1>
-      Will you be my Valentine &#9829; ??
-    </h1>
-    <iframe src="https://giphy.com/embed/10a8AOSeP6Rqfu" width="480" height="480" frameBorder="0"></iframe><p><a href="https://giphy.com/stickers/transparent-cute-10a8AOSeP6Rqfu"></a></p>
+    <span>
+      Will you be my Valentine??
+    </span>
+    <img src="https://media.tenor.com/x5mCUZFo-9sAAAAi/hello-kitty.gif" alt="">
     <div class="buttons">
-      <button>Yes</button>
-      <button>No</button>
+      <button id="yes" [style.width]="yesButtonWidth + 'px'" [style.height]="yesButtonHeight + 'px'" (click)="handleYesClick()">Yes</button>
+      <button id="no" [style.width]="noButtonWidth + '%'" [style.font-size]="noButtonFontSize + 'px'" (click)="handleNoClick()">{{noButtonText}}</button>
     </div>
 </div>
   
